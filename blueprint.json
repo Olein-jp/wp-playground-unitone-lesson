@@ -1,0 +1,36 @@
+{
+  "landingPage": "/wp-admin/edit.php",
+  "steps": [
+    {
+      "step": "login",
+      "username": "admin",
+      "password": "password"
+    },
+    {
+      "step": "setSiteLanguage",
+      "language": "ja"
+    },
+    {
+      "step": "installPlugin",
+      "pluginData": {
+        "resource": "wordpress.org/plugins",
+        "slug": "wp-multibyte-patch"
+      }
+    },
+    {
+      "step": "importWordPressFiles",
+      "wordPressFilesZip": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/Olein-jp/wp-playground-unitone-lesson/main/wordpress-playground.zip"
+      }
+    }
+  ],
+  "preferredVersions": {
+    "php": "8.0",
+    "wp": "latest"
+  },
+  "features": {
+    "networking": true
+  },
+  "login": true
+}
